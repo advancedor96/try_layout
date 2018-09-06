@@ -1,0 +1,9 @@
+// ---------------------------------
+@import '@/sass/public/_reset.scss';
+
+// -- 基本設定 -----------------------
+@import '@/sass/public/_variable.scss';
+@import '@/sass/public/_base.scss';
+
+// -- 頁面 ---------------------------
+@import '@/sass/components/AppHeader.scss';

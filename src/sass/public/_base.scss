@@ -1,0 +1,14 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html,body {
+  font-family: "Helvetica", "HelveticaNeue-Bold", "Roboto", "Microsoft JhengHei", "Heiti TC",
+  sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+}

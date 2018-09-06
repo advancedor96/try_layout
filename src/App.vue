@@ -1,7 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header class="header">
+      <div class="container">
+
+
+        <div class="logo">Shoptime</div>
+        <button class="menubar" @click="isShow = !isShow">≡</button>
+        <ul :class="{ 'isShow' : isShow}">
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/">Order</a></li>
+          <li><a href="/">Product</a></li>
+          <li class="login">
+            Admin
+          </li>
+        </ul>
+
+
+      </div>
+    </header>
+    <HelloWorld/>
   </div>
 </template>
 
@@ -12,17 +29,17 @@ export default {
   name: 'app',
   components: {
     HelloWorld
+  },
+  data(){
+    return {
+      isShow:true
+    }
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>
